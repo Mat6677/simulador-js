@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calcu</title>
+  </head>
+  <body>
+    <div class="calcu__container">
+      <div class="results">
+        <input type="text" id="res" placeholder="0" />
+      </div>
+      <div class="buttons">
+        <div>
+          <button style="background-color: #f22; color: #fff" onclick="del()">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button onclick="sin()">sin</button>
+          <button class="btn">(</button>
+          <button class="btn">)</button>
+          <button class="btn">/</button>
+          <button
+            style="background-color: #3c3; font-weight: 700; color: #fff"
+            onclick="erase()"
+          >
+            C
+          </button>
+        </div>
+        <div>
+          <button onclick="pi()">π</button>
+          <button onclick="cos()">cos</button>
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn">x</button>
+        </div>
+        <div>
+          <button onclick="e()">E</button>
+          <button onclick="tan()">tan</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn">-</button>
+        </div>
+        <div>
+          <button onclick="log()">Log</button>
+          <button onclick="sqrt()">√</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">+</button>
+        </div>
+        <div>
+          <button onclick="powx()" style="position: relative">x<span style="position: absolute; top: 5%; font-size: 12.5px"
+            >y</span</button>
+          <button onclick="pow()" style="position: relative">
+            x<span style="position: absolute; top: 5%; font-size: 12.5px"
+              >2</span
+            >
+          </button>
+          <button class="btn">00</button>
+          <button class="btn">0</button>
+          <button class="btn">.</button>
+          <button onclick="equal()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/df1e0c481c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
